@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BBCC - Black Box of Climate Change</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="/socket.io/socket.io.js"></script>
+
+  <!--
+    <script src="https://cdn.socket.io/socket.io-1.3.4.js"></script>
+    
+  -->
+</head>
+<body >
+  <video id="bg_video" muted loop>
+    <source src="index-res/index-bg-video.mp4" type="video/mp4">
+  </video>
+  
+  <div id="control">
+    <div class="title">BBCC</div>
+    <div class="subtitle">Black Box of Climate Change</div>
+    <div class="message" id="message_container">
+      <div class="message-text" id="message_box">
+      </div>
+    </div>
+  </div>
+  
+  <script src="/jquery-1.11.2.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
