@@ -7,6 +7,8 @@ var io = require('socket.io')(http);
 
 app.use(express.static(__dirname + '/public'));
 
+app.set('port', (process.env.PORT || 5000));
+
 app.get('/', function(req, res) {
     res.sendFile(__dirname + '/index.html');
 });
@@ -19,8 +21,8 @@ app.get('/editor', function(req, res) {
     res.sendFile(__dirname + '/editor.html');
 });
 
-http.listen(3000, function() {
-    console.log('nodejs listening on port 3000...');
+http.listen(process.env.PORT || 5000, function() {
+    console.log('BBCC node.js listening on port ' + app.get('port') + "...");
 });
 
 
