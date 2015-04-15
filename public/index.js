@@ -17,7 +17,7 @@ $('#control').on('mousedown', function() {
 var socket = io();
 socket.on('textchange', function(msg) {
     showMessageContainer();
-    message_box.innerHTML = msg;
+    message_box.innerHTML = msg.replace(/\n/g,'<br>');
 });
 
 socket.on('command', function(cmd) {
@@ -28,6 +28,11 @@ socket.on('command', function(cmd) {
         welcome();
     }
 });
+
+$('#editor').on('input', function(e) {
+    socket.emit('receivertextchange', $('#editor').val());
+});
+
 
 function reset() {
     hideMessageContainer();
@@ -40,11 +45,11 @@ function welcome() {
 }
 
 function hideMessageContainer() {
-    message_container.style.visibility = "hidden";
+    response.style.visibility = "hidden";
 }
 
 function showMessageContainer() {
-    message_container.style.visibility = "visible";
+    response.style.visibility = "visible";
 }
 
 

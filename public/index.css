@@ -6,7 +6,7 @@ html, body {
     padding: 0;
     font-size: 1em;
     background-color: black;
-    font-family: Helvetica;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 video#bg_video {
@@ -51,7 +51,7 @@ div#control {
     margin-top: 3%;
     padding: 35px;
     width: 800px;
-    height: 400px;
+    height: 600px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 25px;
 }
@@ -61,3 +61,18 @@ div#control {
     color: #0FFF00;
 }
 
+#editor {
+	width: 100%;'
+	background: #fefefe;
+	border: 1px solid #111;
+	padding: 1%;
+	font-family: Helvetica, Arial, sans-serif
+}
+
+#message_container {
+	margin-bottom: 1%
+}
+
+#message_container img {
+	max-width: 100%;
+}

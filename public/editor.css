@@ -3,25 +3,37 @@ html, body, form {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-size: 1em;
+    font: 1em Helvetica, Arial sans-serif;
     background-color: #222222;
-    font-family: Helvetica;
 }
 
 #editor {
     margin-left: 5%; margin-right: 0px;
     margin-top: 10px; margin-bottom: 0px;
-    padding: 5px;
     width: 90%;
-    height: 400px;
+    height: 300px;
     resize: none;
-    font-size: 1.8em;
+	padding: 10px;
+    font: 1.8em Helvetica, Arial, sans-serif;
 }
 
 #command {
     margin-left: 5%; margin-right: 0px;
     margin-top: 5px; margin-bottom: 10px;
-    padding: 5px;
+	padding: 10px;
     width: 90%;
 }
 
+h1 {
+	color: #f1f1f1;
+	margin-left: 1%
+}
+
+#message_container {
+	color: #f1f1f1;
+    margin-left: 5%; margin-right: 0px;
+    margin-top: 10px; margin-bottom: 0px;
+    padding: 5px;
+    width: 90%;
+    font-size: 1.2em;
+}

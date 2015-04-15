@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html
 <head>
   <title>BBCC Editor</title>
   <link rel="stylesheet" type="text/css" href="/editor.css">
 </head>
 <body>
-  <form>
-    <textarea id="editor" autofocus></textarea>
-    <input id="command" />
-  </form>
+	<h1>Send to Screen</h1>
+	  <form style="height: auto">
+		<textarea id="editor" autofocus></textarea>
+		<input id="command" />
+	  </form>
+	<h1>Received from Screen</h1>
+    <div class="message" id="message_container">
+      <div class="message-text" id="message_box">
+	  Text received will come here
+      </div>
+	</div>
 
   <script src='/socket.io/socket.io.js'></script>
   <script src="/jquery-1.11.2.min.js"></script>

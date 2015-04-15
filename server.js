@@ -36,6 +36,9 @@ io.on('connection', function(socket) {
     socket.on('textchange', function(msg) {
         io.emit('textchange', msg)
     });
+    socket.on('receivertextchange', function(msg) {
+        io.emit('receivertextchange', msg)
+    });
     socket.on('command', function(cmd) {
         io.emit('command', cmd);
     })
